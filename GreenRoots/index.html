@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Community Gardening Network – Connect with local gardeners to share tips, seeds, and gardening resources. Grow together!" />
+  <title>GreenRoots – Community Gardening Network</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-icon">🌿</span> GreenRoots
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+          <li class="nav-item"><a class="nav-link" href="#seeds">Seed Exchange</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#join" class="btn btn-join ms-3">Join Free</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container" data-aos="fade-up">
+      <span class="hero-badge">🌱 Growing Together Since 2020</span>
+      <h1 class="hero-title">Cultivate Community,<br>Grow <span class="text-highlight">Together</span></h1>
+      <p class="hero-sub">Connect with passionate gardeners near you. Share seeds, trade tips, find resources, and build a greener neighbourhood — one garden at a time.</p>
+      <div class="hero-btns">
+        <a href="#join" class="btn btn-primary-custom me-3">Get Started <i class="bi bi-arrow-right-circle-fill ms-2"></i></a>
+        <a href="#about" class="btn btn-ghost-custom">Explore More</a>
+      </div>
+      <div class="hero-stats d-flex flex-wrap gap-4 mt-5">
+        <div class="stat-pill"><span class="stat-num" data-target="5200">0</span>+ Gardeners</div>
+        <div class="stat-pill"><span class="stat-num" data-target="340">0</span>+ Gardens</div>
+        <div class="stat-pill"><span class="stat-num" data-target="12000">0</span>+ Seeds Shared</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><i class="bi bi-chevron-double-down"></i></div>
+  </section>
+
+  <!-- ===== ABOUT / FEATURES ===== -->
+  <section id="about" class="section-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">Why GreenRoots?</span>
+        <h2 class="section-title">Everything Your Garden Needs</h2>
+        <p class="section-sub">A thriving platform built for gardeners, by gardeners.</p>
+      </div>
+      <div class="row g-4 mt-3">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-card">
+            <div class="feature-icon" style="background: #d4edda;">🌻</div>
+            <h5>Seed Library</h5>
+            <p>Browse and borrow seeds from a community-maintained library of over 400 varieties — heirloom, exotic, and local.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon" style="background: #d1ecf1;">💡</div>
+            <h5>Expert Tips</h5>
+            <p>Discover seasonal gardening advice, pest control guides, composting tutorials, and soil health strategies.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon" style="background: #fff3cd;">🤝</div>
+            <h5>Community Forums</h5>
+            <p>Ask questions, share your harvest, swap cuttings, and connect with gardeners in your ZIP code or worldwide.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-card">
+            <div class="feature-icon" style="background: #f8d7da;">📅</div>
+            <h5>Local Events</h5>
+            <p>Attend workshops, planting days, harvest festivals, and market swaps organised by your local chapter.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon" style="background: #e2d9f3;">🗺️</div>
+            <h5>Garden Map</h5>
+            <p>Find community garden plots, allotments, and shared spaces near you using our interactive location map.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon" style="background: #d4edda;">♻️</div>
+            <h5>Resource Sharing</h5>
+            <p>Borrow tools, lend equipment, share compost and water — reducing waste while strengthening the community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY MEMBERS ===== -->
+  <section id="community" class="section-green">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag light">Our Gardeners</span>
+        <h2 class="section-title light">Meet the Green Thumbs</h2>
+        <p class="section-sub light">Real people, real gardens, real passion.</p>
+      </div>
+      <div class="row g-4 mt-3">
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0">
+          <div class="member-card">
+            <div class="member-avatar">🧑‍🌾</div>
+            <h6>Arjun Sharma</h6>
+            <span class="member-location"><i class="bi bi-geo-alt-fill"></i> Mumbai, MH</span>
+            <p>Heirloom tomato enthusiast. Loves composting and teaching beginners.</p>
+            <div class="member-tags">
+              <span class="tag">Tomatoes</span>
+              <span class="tag">Composting</span>
+            </div>
+            <button class="btn btn-connect" data-bs-toggle="modal" data-bs-target="#connectModal" data-name="Arjun Sharma">Connect</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="member-card">
+            <div class="member-avatar">👩‍🌾</div>
+            <h6>Priya Nair</h6>
+            <span class="member-location"><i class="bi bi-geo-alt-fill"></i> Bangalore, KA</span>
+            <p>Balcony gardener specialising in herbs, microgreens and hydroponic setups.</p>
+            <div class="member-tags">
+              <span class="tag">Herbs</span>
+              <span class="tag">Hydroponics</span>
+            </div>
+            <button class="btn btn-connect" data-bs-toggle="modal" data-bs-target="#connectModal" data-name="Priya Nair">Connect</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="member-card">
+            <div class="member-avatar">🧔</div>
+            <h6>Rohan Desai</h6>
+            <span class="member-location"><i class="bi bi-geo-alt-fill"></i> Pune, MH</span>
+            <p>Fruit tree grower with a passion for permaculture and food forests.</p>
+            <div class="member-tags">
+              <span class="tag">Permaculture</span>
+              <span class="tag">Fruits</span>
+            </div>
+            <button class="btn btn-connect" data-bs-toggle="modal" data-bs-target="#connectModal" data-name="Rohan Desai">Connect</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="member-card">
+            <div class="member-avatar">👩</div>
+            <h6>Meera Pillai</h6>
+            <span class="member-location"><i class="bi bi-geo-alt-fill"></i> Kochi, KL</span>
+            <p>Native plant advocate and master composter with 10+ years of experience.</p>
+            <div class="member-tags">
+              <span class="tag">Native Plants</span>
+              <span class="tag">Soil Health</span>
+            </div>
+            <button class="btn btn-connect" data-bs-toggle="modal" data-bs-target="#connectModal" data-name="Meera Pillai">Connect</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="#join" class="btn btn-primary-custom">View All Members <i class="bi bi-people-fill ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEED EXCHANGE ===== -->
+  <section id="seeds" class="section-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="section-tag">🌾 Seed Library</span>
+          <h2 class="section-title mt-2">Share Seeds, Grow Abundance</h2>
+          <p class="section-sub">Our community seed library is stocked by gardeners just like you. Trade your surplus for something new — discover rare and heirloom varieties you won't find in stores.</p>
+          <ul class="seed-features">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>400+ seed varieties available</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Verified organic &amp; heirloom selections</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Free to borrow, return &amp; share</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Detailed growing instructions included</li>
+          </ul>
+          <button class="btn btn-primary-custom mt-3" data-bs-toggle="modal" data-bs-target="#seedModal">
+            Browse Seed Library <i class="bi bi-search ms-2"></i>
+          </button>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+          <div class="seed-grid">
+            <div class="seed-item" data-aos="zoom-in" data-aos-delay="0">
+              <div class="seed-emoji">🍅</div>
+              <span>Cherokee Purple Tomato</span>
+              <small>Heirloom · Available</small>
+            </div>
+            <div class="seed-item" data-aos="zoom-in" data-aos-delay="60">
+              <div class="seed-emoji">🌶️</div>
+              <span>Kashmiri Red Chilli</span>
+              <small>Rare · 3 Left</small>
+            </div>
+            <div class="seed-item" data-aos="zoom-in" data-aos-delay="120">
+              <div class="seed-emoji">🥬</div>
+              <span>Butterhead Lettuce</span>
+              <small>Organic · Available</small>
+            </div>
+            <div class="seed-item" data-aos="zoom-in" data-aos-delay="180">
+              <div class="seed-emoji">🌻</div>
+              <span>Mammoth Sunflower</span>
+              <small>Heirloom · Available</small>
+            </div>
+            <div class="seed-item" data-aos="zoom-in" data-aos-delay="240">
+              <div class="seed-emoji">🫑</div>
+              <span>Yellow Bell Pepper</span>
+              <small>Organic · Available</small>
+            </div>
+            <div class="seed-item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="seed-emoji">🌿</div>
+              <span>Thai Holy Basil</span>
+              <small>Rare · Available</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GARDENING TIPS ===== -->
+  <section id="tips" class="section-cream">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">📚 Knowledge Garden</span>
+        <h2 class="section-title">Gardening Tips &amp; Guides</h2>
+        <p class="section-sub">Curated wisdom from our community of expert gardeners.</p>
+      </div>
+      <!-- Filter buttons -->
+      <div class="tips-filter d-flex flex-wrap justify-content-center gap-2 my-4" data-aos="fade-up">
+        <button class="btn btn-filter active" data-filter="all">All</button>
+        <button class="btn btn-filter" data-filter="beginner">🌱 Beginner</button>
+        <button class="btn btn-filter" data-filter="soil">🪱 Soil</button>
+        <button class="btn btn-filter" data-filter="water">💧 Water</button>
+        <button class="btn btn-filter" data-filter="pest">🐛 Pest Control</button>
+        <button class="btn btn-filter" data-filter="seasonal">🍂 Seasonal</button>
+      </div>
+      <div class="row g-4" id="tipsGrid">
+        <div class="col-md-4 tip-card-wrap" data-category="beginner" data-aos="fade-up">
+          <div class="tip-card">
+            <div class="tip-img-placeholder" style="background: linear-gradient(135deg,#a8e063,#56ab2f);">🌱</div>
+            <div class="tip-body">
+              <span class="tip-badge beginner">Beginner</span>
+              <h5>Starting Your First Vegetable Garden</h5>
+              <p>Learn which vegetables are easiest to grow, how to prepare your soil, and the best way to layout your first bed.</p>
+              <button class="btn btn-read" data-bs-toggle="modal" data-bs-target="#tipModal" data-title="Starting Your First Vegetable Garden" data-body="Choose a sunny spot with at least 6 hours of sunlight. Start with easy crops like radishes, lettuce, beans, and tomatoes. Prepare your soil by mixing compost and loosen it 12 inches deep. Water consistently and watch your garden thrive!">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 tip-card-wrap" data-category="soil" data-aos="fade-up" data-aos-delay="100">
+          <div class="tip-card">
+            <div class="tip-img-placeholder" style="background: linear-gradient(135deg,#c8a96e,#795548);">🪱</div>
+            <div class="tip-body">
+              <span class="tip-badge soil">Soil</span>
+              <h5>Composting 101: Turn Waste into Gold</h5>
+              <p>A step-by-step guide to setting up a compost pile, what to add, what to avoid, and how to use the finished compost.</p>
+              <button class="btn btn-read" data-bs-toggle="modal" data-bs-target="#tipModal" data-title="Composting 101" data-body="Layer brown materials (dried leaves, cardboard) with green materials (kitchen scraps, grass clippings) in a 3:1 ratio. Keep the pile moist and turn it every 1–2 weeks. In 2–3 months you'll have rich dark compost for your garden beds.">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 tip-card-wrap" data-category="water" data-aos="fade-up" data-aos-delay="200">
+          <div class="tip-card">
+            <div class="tip-img-placeholder" style="background: linear-gradient(135deg,#74d7f7,#0288d1);">💧</div>
+            <div class="tip-body">
+              <span class="tip-badge water">Water</span>
+              <h5>Smart Watering: Save Water, Grow More</h5>
+              <p>Discover drip irrigation basics, rain harvesting, moisture-retaining mulch techniques, and the best time of day to water.</p>
+              <button class="btn btn-read" data-bs-toggle="modal" data-bs-target="#tipModal" data-title="Smart Watering Techniques" data-body="Water in the early morning to reduce evaporation. Use drip irrigation or soaker hoses to deliver water directly to roots. Mulch your beds with 3 inches of organic material to retain moisture. Collect rainwater in barrels — it's naturally soft and plants love it!">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 tip-card-wrap" data-category="pest" data-aos="fade-up">
+          <div class="tip-card">
+            <div class="tip-img-placeholder" style="background: linear-gradient(135deg,#f3c27a,#e65100);">🐛</div>
+            <div class="tip-body">
+              <span class="tip-badge pest">Pest Control</span>
+              <h5>Natural Pest Control Without Chemicals</h5>
+              <p>Use companion planting, neem oil, and beneficial insects to protect your crops without harming the environment.</p>
+              <button class="btn btn-read" data-bs-toggle="modal" data-bs-target="#tipModal" data-title="Natural Pest Control" data-body="Plant marigolds and basil as companion plants to repel aphids and mosquitoes. Spray diluted neem oil on leaves to deter insects. Attract ladybugs and lacewings by planting dill and fennel — they eat aphids naturally. Use physical barriers like row covers for caterpillars.">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 tip-card-wrap" data-category="seasonal" data-aos="fade-up" data-aos-delay="100">
+          <div class="tip-card">
+            <div class="tip-img-placeholder" style="background: linear-gradient(135deg,#ffcc80,#e67e22);">🍂</div>
+            <div class="tip-body">
+              <span class="tip-badge seasonal">Seasonal</span>
+              <h5>Winter Garden Prep: Setting Up for Spring</h5>
+              <p>Cover crops, soil amendments, and cold-frame techniques to keep your garden productive through the winter months.</p>
+              <button class="btn btn-read" data-bs-toggle="modal" data-bs-target="#tipModal" data-title="Winter Garden Prep" data-body="Plant cover crops like clover or rye to protect and enrich soil over winter. Add compost and organic matter now so it breaks down over the cold months. Build a simple cold frame from old windows and wood to extend your growing season by 6–8 weeks on each end.">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 tip-card-wrap" data-category="beginner" data-aos="fade-up" data-aos-delay="200">
+          <div class="tip-card">
+            <div class="tip-img-placeholder" style="background: linear-gradient(135deg,#b2fab4,#2e7d32);">🪴</div>
+            <div class="tip-body">
+              <span class="tip-badge beginner">Beginner</span>
+              <h5>Container Gardening for Small Spaces</h5>
+              <p>Grow a productive kitchen garden on a balcony or patio with the right containers, soil mix, and plant choices.</p>
+              <button class="btn btn-read" data-bs-toggle="modal" data-bs-target="#tipModal" data-title="Container Gardening" data-body="Use containers at least 12 inches deep for most vegetables. Mix potting soil with perlite and compost for great drainage. Choose compact varieties like cherry tomatoes, dwarf beans, and herbs. Self-watering containers are a great investment for busy gardeners.">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section id="events" class="section-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">📅 Community Events</span>
+        <h2 class="section-title">Upcoming Gardening Events</h2>
+        <p class="section-sub">Meet fellow gardeners, learn from experts, and celebrate the harvest season.</p>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="event-card">
+            <div class="event-date-badge">
+              <span class="event-day">22</span>
+              <span class="event-month">Mar</span>
+            </div>
+            <div class="event-body">
+              <h5>Spring Seed Swap Festival</h5>
+              <p class="event-meta"><i class="bi bi-geo-alt-fill"></i> Cubbon Park, Bangalore</p>
+              <p>Bring your surplus seeds and take home something exciting! Experts on hand to advise on growing conditions.</p>
+              <button class="btn btn-event" data-bs-toggle="modal" data-bs-target="#eventModal" data-event="Spring Seed Swap Festival" data-date="March 22, 2026" data-loc="Cubbon Park, Bangalore">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-card">
+            <div class="event-date-badge">
+              <span class="event-day">05</span>
+              <span class="event-month">Apr</span>
+            </div>
+            <div class="event-body">
+              <h5>Composting &amp; Soil Health Workshop</h5>
+              <p class="event-meta"><i class="bi bi-geo-alt-fill"></i> Shivaji Park, Mumbai</p>
+              <p>A hands-on workshop covering hot composting, vermicomposting, and building perfect garden soil structure.</p>
+              <button class="btn btn-event" data-bs-toggle="modal" data-bs-target="#eventModal" data-event="Composting Workshop" data-date="April 5, 2026" data-loc="Shivaji Park, Mumbai">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-card">
+            <div class="event-date-badge">
+              <span class="event-day">18</span>
+              <span class="event-month">Apr</span>
+            </div>
+            <div class="event-body">
+              <h5>Community Harvest &amp; Market Day</h5>
+              <p class="event-meta"><i class="bi bi-geo-alt-fill"></i> Lodi Garden, Delhi</p>
+              <p>Sell or trade your homegrown produce, attend cooking demos, and enjoy live music in our celebration of the harvest.</p>
+              <button class="btn btn-event" data-bs-toggle="modal" data-bs-target="#eventModal" data-event="Community Harvest Day" data-date="April 18, 2026" data-loc="Lodi Garden, Delhi">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOIN / CONTACT FORM ===== -->
+  <section id="join" class="section-green">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+          <span class="section-tag light">Join the Network</span>
+          <h2 class="section-title light mt-2">Start Your<br>Gardening Journey</h2>
+          <p class="section-sub light">Join thousands of gardeners across India who are sharing, growing, and learning together every day. It's completely free.</p>
+          <ul class="join-perks mt-4">
+            <li><i class="bi bi-check-circle-fill me-2"></i>Free membership — always</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i>Access the full seed library</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i>Connect with local gardeners</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i>Get personalised growing advice</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 offset-lg-1" data-aos="fade-left">
+          <div class="contact-form-card">
+            <h4 class="mb-4">Create Your Free Account</h4>
+            <form id="joinForm" novalidate>
+              <div class="row g-3">
+                <div class="col-6">
+                  <label class="form-label">First Name</label>
+                  <input type="text" id="firstName" class="form-control custom-input" placeholder="Arjun" required />
+                  <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="col-6">
+                  <label class="form-label">Last Name</label>
+                  <input type="text" id="lastName" class="form-control custom-input" placeholder="Sharma" required />
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" id="email" class="form-control custom-input" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">City / Location</label>
+                  <input type="text" id="location" class="form-control custom-input" placeholder="Mumbai, Maharashtra" required />
+                  <div class="invalid-feedback">Please enter your location.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Gardening Experience</label>
+                  <select id="experience" class="form-select custom-input" required>
+                    <option value="">Select level...</option>
+                    <option>Complete Beginner</option>
+                    <option>Some Experience (1–2 years)</option>
+                    <option>Intermediate (2–5 years)</option>
+                    <option>Expert (5+ years)</option>
+                  </select>
+                  <div class="invalid-feedback">Please select your experience level.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">What are you interested in? (Optional)</label>
+                  <textarea id="interests" class="form-control custom-input" rows="3" placeholder="Seeds, composting, fruit trees..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-join-submit w-100">
+                    Join GreenRoots Free <i class="bi bi-leaf-fill ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-light">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">📬 Get in Touch</span>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="contact-icon-card">
+            <div class="contact-icon">📧</div>
+            <h6>Email Us</h6>
+            <p>hello@greenroots.in</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-icon-card">
+            <div class="contact-icon">📞</div>
+            <h6>Call Us</h6>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-icon-card">
+            <div class="contact-icon">🌐</div>
+            <h6>Follow Along</h6>
+            <p>@GreenRootsIndia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">🌿 GreenRoots</div>
+          <p class="footer-desc">Connecting communities through the joy of gardening. Growing a greener world, one seed at a time.</p>
+          <div class="social-icons">
+            <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-heading">Explore</h6>
+          <ul class="footer-links">
+            <li><a href="#about">Features</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#seeds">Seed Library</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-heading">Resources</h6>
+          <ul class="footer-links">
+            <li><a href="#">Garden Map</a></li>
+            <li><a href="#">Plant Database</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-heading">Company</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="footer-desc small">Get weekly tips &amp; garden inspiration.</p>
+          <form id="newsletterForm" class="mt-2">
+            <div class="input-group">
+              <input type="email" id="newsletterEmail" class="form-control footer-input" placeholder="Your email" required />
+              <button class="btn btn-newsletter" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <p class="mb-0">© 2026 GreenRoots Community Gardening Network. All rights reserved.</p>
+        <p class="mb-0">Made with 💚 for gardeners everywhere</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS ===== -->
+
+  <!-- Connect Modal -->
+  <div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="connectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-custom">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="connectModalLabel">Connect with <span id="connectName"></span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-3">Send a message to introduce yourself and start the conversation!</p>
+          <textarea class="form-control custom-input" rows="4" placeholder="Hi! I saw your profile and would love to connect about gardening..."></textarea>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary-custom" id="sendConnectMsg">Send Message <i class="bi bi-send-fill ms-1"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seed Modal -->
+  <div class="modal fade" id="seedModal" tabindex="-1" aria-labelledby="seedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-custom">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="seedModalLabel">🌾 Community Seed Library</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <input type="text" id="seedSearch" class="form-control custom-input" placeholder="Search seeds... (e.g. tomato, basil, chilli)">
+          </div>
+          <div class="seed-list" id="seedList">
+            <div class="seed-list-item">🍅 <strong>Cherokee Purple Tomato</strong> <span class="badge bg-success">Available</span> <small class="text-muted ms-2">Heirloom · Added by Arjun</small></div>
+            <div class="seed-list-item">🌶️ <strong>Kashmiri Red Chilli</strong> <span class="badge bg-warning text-dark">3 Left</span> <small class="text-muted ms-2">Rare · Added by Meera</small></div>
+            <div class="seed-list-item">🥬 <strong>Butterhead Lettuce</strong> <span class="badge bg-success">Available</span> <small class="text-muted ms-2">Organic · Added by Priya</small></div>
+            <div class="seed-list-item">🌻 <strong>Mammoth Sunflower</strong> <span class="badge bg-success">Available</span> <small class="text-muted ms-2">Heirloom · Added by Rohan</small></div>
+            <div class="seed-list-item">🫑 <strong>Yellow Bell Pepper</strong> <span class="badge bg-success">Available</span> <small class="text-muted ms-2">Organic · Added by Priya</small></div>
+            <div class="seed-list-item">🌿 <strong>Thai Holy Basil</strong> <span class="badge bg-success">Available</span> <small class="text-muted ms-2">Rare · Added by Meera</small></div>
+            <div class="seed-list-item">🥕 <strong>Nantes Carrot</strong> <span class="badge bg-success">Available</span> <small class="text-muted ms-2">Heirloom · Added by Rohan</small></div>
+            <div class="seed-list-item">🫛 <strong>Snow Peas</strong> <span class="badge bg-danger">Out of Stock</span> <small class="text-muted ms-2">Organic · Added by Arjun</small></div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#join" class="btn btn-primary-custom" data-bs-dismiss="modal">Join to Request Seeds <i class="bi bi-leaf-fill ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tip Modal -->
+  <div class="modal fade" id="tipModal" tabindex="-1" aria-labelledby="tipModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-custom">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="tipModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="tipModalBody"></div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#join" class="btn btn-primary-custom" data-bs-dismiss="modal">Share a Tip <i class="bi bi-pencil-fill ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal -->
+  <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-custom">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="eventModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="eventLocation" class="text-muted mb-4"></p>
+          <form id="eventRegForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-control custom-input" id="eventName" placeholder="Arjun Sharma" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control custom-input" id="eventEmail" placeholder="you@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Number of Attendees</label>
+              <select class="form-select custom-input" id="eventAttendees" required>
+                <option value="">Select...</option>
+                <option>Just me</option>
+                <option>2 people</option>
+                <option>3–5 people</option>
+                <option>6+ people</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary-custom" id="confirmEventReg">Confirm Registration <i class="bi bi-calendar-check-fill ms-1"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastBody"></div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button id="backToTop" title="Back to top"><i class="bi bi-arrow-up-short"></i></button>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
