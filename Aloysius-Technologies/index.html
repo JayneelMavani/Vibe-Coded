@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aloysius Technologies – India's trusted supplier of industrial cleaning machines. Vacuum cleaners, floor scrubbers, pressure washers, sweeping machines and more." />
+  <title>Aloysius Technologies – Industrial Cleaning Solutions</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="images/logo.jpg" alt="Aloysius Technologies Logo" />
+        <div class="nav-brand-text">
+          Aloysius Technologies
+          <span>Mechanised Cleaning Solutions</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#categories" class="active">Products</a>
+        <a href="#products">All Machines</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartToggle" aria-label="Open cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge hidden" id="cartBadge">0</span>
+        </button>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
+    <div class="hero-content">
+      <div class="hero-tag">🏭 Trusted Since 2012 · ISO 9001:2008 Certified</div>
+      <h1>Industrial Cleaning<br>Made <em>Effortless</em></h1>
+      <p>Premium mechanised cleaning solutions for factories, warehouses, hospitals, hotels, and commercial spaces. Trusted by 500+ businesses across India.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-hero-primary">Browse Machines <i class="bi bi-arrow-right ms-1"></i></a>
+        <a href="#contact" class="btn-hero-secondary">Request a Quote</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num">13+</span>
+          <span class="label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">500+</span>
+          <span class="label">Clients Served</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">14+</span>
+          <span class="label">Machine Models</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Product Categories</div>
+        <h2 class="section-title">Browse by Category</h2>
+        <p class="section-sub">Explore our full range of mechanised cleaning equipment, sourced from authentic vendors for quality you can trust.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card active" data-category="all" onclick="filterProducts('all', this)">
+          <div class="cat-icon">🔧</div>
+          <h4>All Machines</h4>
+          <span class="cat-count">14 products</span>
+        </div>
+        <div class="cat-card" data-category="vacuum" onclick="filterProducts('vacuum', this)">
+          <div class="cat-icon">🧹</div>
+          <h4>Vacuum Cleaners</h4>
+          <span class="cat-count">4 products</span>
+        </div>
+        <div class="cat-card" data-category="disc" onclick="filterProducts('disc', this)">
+          <div class="cat-icon">⚙️</div>
+          <h4>Single Disc Machines</h4>
+          <span class="cat-count">3 products</span>
+        </div>
+        <div class="cat-card" data-category="scrubber" onclick="filterProducts('scrubber', this)">
+          <div class="cat-icon">🧽</div>
+          <h4>Floor Scrubbers & Dryers</h4>
+          <span class="cat-count">3 products</span>
+        </div>
+        <div class="cat-card" data-category="pressure" onclick="filterProducts('pressure', this)">
+          <div class="cat-icon">💦</div>
+          <h4>Pressure Washers</h4>
+          <span class="cat-count">1 product</span>
+        </div>
+        <div class="cat-card" data-category="sweeper" onclick="filterProducts('sweeper', this)">
+          <div class="cat-icon">🏗️</div>
+          <h4>Sweeping Machines</h4>
+          <span class="cat-count">1 product</span>
+        </div>
+        <div class="cat-card" data-category="foam" onclick="filterProducts('foam', this)">
+          <div class="cat-icon">🫧</div>
+          <h4>Foam Generators</h4>
+          <span class="cat-count">1 product</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="section section-alt" id="products">
+    <div class="container">
+      <div class="products-toolbar">
+        <h3 id="productsTitle">All Machines</h3>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all" onclick="filterProducts('all')">All</button>
+          <button class="filter-btn" data-filter="vacuum" onclick="filterProducts('vacuum')">Vacuum</button>
+          <button class="filter-btn" data-filter="disc" onclick="filterProducts('disc')">Disc</button>
+          <button class="filter-btn" data-filter="scrubber" onclick="filterProducts('scrubber')">Scrubber</button>
+          <button class="filter-btn" data-filter="pressure" onclick="filterProducts('pressure')">Pressure</button>
+          <button class="filter-btn" data-filter="sweeper" onclick="filterProducts('sweeper')">Sweeper</button>
+          <button class="filter-btn" data-filter="foam" onclick="filterProducts('foam')">Foam</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-tag">About Aloysius Technologies</div>
+          <h2>Your Trusted Partner in Cleaning Solutions</h2>
+          <p>Established in 2012, Aloysius Technologies has grown into one of Gujarat's most reliable suppliers of mechanised cleaning equipment. Based in Ahmedabad, we serve a wide distribution network across India.</p>
+          <p>We source our machines from authentic, verified vendors — ensuring sturdy construction, anti-corrosive materials, long battery life, and low maintenance. Our team provides dedicated after-sales support and expert guidance.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-patch-check-fill"></i></div>
+              <div>
+                <strong>ISO 9001:2008</strong>
+                <span>Certified quality standards</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-truck"></i></div>
+              <div>
+                <strong>Pan-India Delivery</strong>
+                <span>From our Ahmedabad warehouse</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-tools"></i></div>
+              <div>
+                <strong>After-Sales Support</strong>
+                <span>Maintenance & spare parts</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-shield-check"></i></div>
+              <div>
+                <strong>Verified Vendors</strong>
+                <span>Only authentic equipment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/hero.png" alt="Aloysius Technologies Warehouse" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Ready to Upgrade Your Cleaning?</h2>
+        <p class="section-sub">Contact us for quotes, demos, or any questions about our machines. We're here to help.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <h5>Visit Us</h5>
+          <p>Moraiya, Ahmedabad,<br>Gujarat, India</p>
+        </div>
+        <div class="contact-card">
+          <i class="bi bi-telephone-fill"></i>
+          <h5>Call Us</h5>
+          <p>+91 XXXXX XXXXX</p>
+        </div>
+        <div class="contact-card">
+          <i class="bi bi-envelope-fill"></i>
+          <h5>Email Us</h5>
+          <p>info@aloysiustech.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">🏭 Aloysius Technologies</div>
+          <p class="footer-desc">India's trusted supplier of mechanised cleaning solutions. Vacuum cleaners, floor scrubbers, pressure washers, and more — since 2012.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h6 class="footer-heading">Products</h6>
+          <ul class="footer-links">
+            <li><a href="#" onclick="filterProducts('vacuum'); return false;">Vacuum Cleaners</a></li>
+            <li><a href="#" onclick="filterProducts('disc'); return false;">Single Disc Machines</a></li>
+            <li><a href="#" onclick="filterProducts('scrubber'); return false;">Floor Scrubbers</a></li>
+            <li><a href="#" onclick="filterProducts('pressure'); return false;">Pressure Washers</a></li>
+            <li><a href="#" onclick="filterProducts('sweeper'); return false;">Sweeping Machines</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="footer-heading">Company</h6>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Aloysius Technologies. All rights reserved.</p>
+        <p>Ahmedabad, Gujarat · GST: 24AAWFA1006C1Z0</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="bi bi-bag me-2"></i>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <i class="bi bi-bag-x"></i>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn-quote" id="quoteToggleBtn" onclick="toggleQuoteForm()">
+        Request Quote <i class="bi bi-send-fill ms-1"></i>
+      </button>
+      <div class="quote-form" id="quoteForm" style="display:none;">
+        <p class="quote-form-label">Enter your details and we'll get back to you</p>
+        <input type="text" id="quoteName" class="quote-input" placeholder="Your Name" required />
+        <input type="tel" id="quotePhone" class="quote-input" placeholder="Phone Number" required />
+        <input type="email" id="quoteEmail" class="quote-input" placeholder="Email Address (optional)" />
+        <button class="btn-quote btn-submit-quote" onclick="submitQuote()">
+          Submit Quote Request <i class="bi bi-check-circle-fill ms-1"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCT DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()"><i class="bi bi-x-lg"></i></button>
+      <img class="modal-img" id="modalImg" src="" alt="" />
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p class="modal-model" id="modalModel"></p>
+        <p class="modal-price" id="modalPrice"></p>
+        <table class="modal-specs-table" id="modalSpecs"></table>
+        <div class="modal-actions">
+          <button class="btn-add-cart" id="modalAddCart" onclick="addToCartFromModal()">
+            <i class="bi bi-bag-plus"></i> Add to Cart
+          </button>
+          <a href="#contact" class="btn-outline" onclick="closeModal()">
+            <i class="bi bi-chat-left-text"></i> Enquire
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="floating-actions">
+    <a href="https://wa.me/91XXXXXXXXXX" class="fab fab-whatsapp" target="_blank" title="Chat on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="tel:+91XXXXXXXXXX" class="fab fab-phone" title="Call Us">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+  </div>
+
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Toast -->
+  <div class="toast-notification" id="toast"></div>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
